@@ -1,0 +1,10 @@
+#impedor que vean la lista de directorios
+
+Options All -Indexes
+Options -MultiViews
+
+#url amigables
+
+RewriteEngine On
+
+RewriteRule ^([-_a-zA-Z0-9/]+)$ index.php?enlace=$1 [QSA]
